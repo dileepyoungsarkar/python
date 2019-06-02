@@ -17,6 +17,11 @@ def draw_square():
     brad.forward(100)
     brad.right(90)
 
+    angie =turtle.Turtle() #Turtle is a class
+    angie.shape("arrow")
+    angie.color("blue")
+    angie.circle(100)
+
     window.exitonclick()
 
     draw_square()
