@@ -1,22 +1,18 @@
 import turtle
 
-def draw_square():
-    window=turtle.Screen()
-    window.bgcolor("red")
+def draw_square(some_turtle):
+    for i in range(1,5):
+        some_turtle.forward(100)
+        some_turtle.right(90)
 
-    brad = turtle.Turtle()
+def draw_art():
+    window =turtle.Screen()
+    window.bgcolor("red")
+    brad=turtle.Turtle() 
     brad.shape("turtle")
     brad.color("yellow")
     brad.speed(2)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-
+    draw_square(brad)
     angie =turtle.Turtle() #Turtle is a class
     angie.shape("arrow")
     angie.color("blue")
@@ -24,4 +20,4 @@ def draw_square():
 
     window.exitonclick()
 
-    draw_square()
+  draw_art()
