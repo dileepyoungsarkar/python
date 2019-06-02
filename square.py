@@ -12,12 +12,18 @@ def draw_art():
     brad.shape("turtle")
     brad.color("yellow")
     brad.speed(2)
-    draw_square(brad)
+     # drawing a circle with squares
+     for i in range(1,37):
+     draw_square(brad)
+     brad.right(10)
     angie =turtle.Turtle() #Turtle is a class
     angie.shape("arrow")
     angie.color("blue")
     angie.circle(100)
 
     window.exitonclick()
+
+   
+    
 
   draw_art()
